@@ -13,9 +13,9 @@ The solution to these problems is calculated completely with SQL queries allowin
 
 # Getting Started
 
-The user of the program must have PostGres SQL installed and running on localhost:5432 in order to connect.  The standard Udacity user vagrant is coded to a variable in the psqlcon.py file and can be updated as required.  A password is also coded to a variable and can be updated as needed.  The database name is **postgres**.
+The user of the program must have PostGres SQL installed and running on localhost:5432 in order to connect.  If the user is using a different port, the port perameter must be added to the psycopg2.connect statement.  The standard Udacity user vagrant is coded to a variable in the psqlcon.py file and can be updated as required.  A password is also coded to a variable and can be updated as needed.  For the purpose of providing security, vagrant was added as the password.  The database name is **postgres**.
 
-In addition to the Udacity provided database, tables, and values, two views were created to minimise processing time for question 3.  To create these views, on can copy and paste the following two statements and execute to the database.  
+In addition to the Udacity provided database, tables, and values, two views were created to minimise processing time for question 3.  To create these views, on can copy and paste the following two statements and execute to the database.  Due to difficulties with Vargant, the newsdata.sql file was uploaded to postgres manually via the command \i <path>newsdata.sql.  The lastest version of this sql database file can be found on Udemy's website.
 
 CREATE VIEW total_errors AS
 SELECT date(time), count(status) AS total
