@@ -33,15 +33,15 @@ CREATE VIEW
 Once the database is in place and the two views have been created successfully, the user will run the program psqlcon.py using Python 2.7.  Once running, the user can selected the option they wish to see the result of and press enter.  The program will automatically exit when completed.
 
 # Design of The Program
-##psqlcon.py
+## psqlcon.py
 The program was written using Python 2.7 and psycopg2 which was downloaded through shell using the command 'pip install psycopg2'.  The program uses variables for the database connection requirements so as to ease any changes required by users with different parameters.  Provided that the user is running PostGres SQL as stated in the introduction and has set their parameters for the connection, only the source file of psqlcon.py is required to operate the program.
 
-#Credits and Notes
+# Credits and Notes
 
 As noted in the getting started section, subadhra.srinivas on the Udacity Forums provided the idea and code for creating the views.  This was modified slightly for the purpose of my project.
 
 Much of the Python code was generated based on internet searches and parts of other users suggested code.  While there was not direct copying of any other users code other than that used to create the views, it should be noted that many post only contributed to the final outcome and final version of the project.
 
-#License
+# License
 
 Python is used in agreement with Python 2.7 license which can be found in whole at the following link: [Python 2.7 License](https://www.python.org/download/releases/2.7/license/)
