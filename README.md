@@ -15,18 +15,18 @@ The solution to these problems is calculated completely with SQL queries allowin
 
 The user of the program must have PostGres SQL installed and running on localhost:5432 in order to connect.  The standard Udacity user vagrant is coded to a variable in the psqlcon.py file and can be updated as required.  A password is also coded to a variable and can be updated as needed.  The database name is **postgres**.
 
-In addition to the Udacity provided database, tables, and values, two views were created to minimise processing time for question 3.  To create these views, one must perform the following at the psql shell:
+In addition to the Udacity provided database, tables, and values, two views were created to minimise processing time for question 3.  To create these views, on can copy and paste the following two statements and execute to the database.  
 
-CREATE VIEW as total_errors (Press Enter)
-SELECT date(time), count(status) as total from log
+CREATE VIEW total_errors AS
+SELECT date(time), count(status) AS total
+FROM log
 WHERE status = '404 NOT FOUND'
 GROUP BY date(time)
-CREATE VIEW
 
-CREATE VIEW as total_views (Press Enter)
-SELECT date(time), count(status) as total from log
+CREATE VIEW total_views AS
+SELECT date(time), count(status) AS total
+FROM log
 GROUP BY date(time)
-CREATE VIEW
 
 **NOTE** Credit to this view creation goes to subadhra.srinivas on the Udacity Forums [Udacity Post 294406](https://discussions.udacity.com/t/is-my-query-3-results-right/294406)
 
