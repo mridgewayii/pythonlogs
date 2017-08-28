@@ -19,7 +19,7 @@ cur = conn.cursor()
 #Print the list of choices the user of the program can choose from.
 print ("The following options are available to the user for selection.")
 print ("")
-print ("1) Show me the most popular three articles of all time.")
+print ("1) Show me the most popular three articles of all time?")
 print ("2) Who are the most popular article authors of all time?")
 print ("3) On which days did more than 1% of requests lead to errors?")
 print ("4) Exit Program")
