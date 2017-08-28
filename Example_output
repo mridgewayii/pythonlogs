@@ -1,0 +1,19 @@
+# Output Example
+1) Show me the most popular three articles of all time?
+
+Article -  Candidate is jerk, alleges rival  - Number of Views:  338647
+Article -  Bears love berries, alleges bear  - Number of Views:  253801
+Article -  Bad things gone, say good people  - Number of Views:  170098
+
+2) Who are the most popular article authors of all time?
+
+Author -  Ursula La Multa  - Number of Views:  512805
+Author -  Rudolf von Treppenwitz  - Number of Views:  427781
+Author -  Anonymous Contributor  - Number of Views:  171762
+Author -  Markoff Chaney  - Number of Views:  85387
+
+3) On which days did more than 1% of requests lead to errors?
+
+Date -  2016-07-17  - Percent Errors  2.27852650494
+
+4) Exit Program
